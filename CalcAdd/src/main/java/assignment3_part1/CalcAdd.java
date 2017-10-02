@@ -1,4 +1,4 @@
-package assignment3_part1.CalcAdd;
+package assignment3_part1;
 
 public class CalcAdd {
 	CalcInterface intObj;
@@ -17,6 +17,4 @@ public class CalcAdd {
 	this.intObj =intObj;
 
 }
-	
-
 }

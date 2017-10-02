@@ -1,16 +1,15 @@
-package assignment3_part1.CalcAdd;
+package assignment3_part1;
 import static org.mockito.Mockito.*;
-
 import junit.framework.TestCase;
 
 public class CalcAddTest extends TestCase {
-	CalcAdd  obj;
+	CalcAdd obj;
 	int x, y;
 
 	protected void setUp() throws Exception {
-		obj =new CalcAdd ();
-		x = 7;
-		y = 10;
+		obj =new CalcAdd();
+		x = 10;
+		y = 5;
 		CalcInterface mockObj = mock(CalcInterface.class);
 		when(mockObj.add(x, y)).thenReturn(x+y);
 	obj.setIntObj(mockObj, mockObj);	
@@ -22,7 +21,7 @@ public class CalcAddTest extends TestCase {
 		y = 0;	
 	}
 	public void testAddTwoNums() {
-		assertEquals(17, obj.addTwoNums(x, y));
+		assertEquals(15, obj.addTwoNums(x, y));
 	}
 
 }
